@@ -142,7 +142,7 @@
 	}
 	layout
 	{
-		place { control="ImageAvatar" x=13 y=13 }
+		place { control="ImageAvatar" width=40 height=40 x=17 y=28 }
 		place { control="LabelSender,LabelInfo,LabelChat" x=67 dir=down margin=11 margin-left=0 margin-bottom=0 }
 		place { control="LabelHotkey" y=76 width=250 }
 	}

@@ -1,0 +1,695 @@
+"resource/layout/steamrootdialog.layout" { 
+
+	//include "resource/layout/macosbuttons.styles"
+
+	styles {
+		
+			//unique styles for the client main window
+		
+
+		MenuBar
+		{
+				bgcolor = "ClientBG"
+			render
+			{
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				2 = "image(x0+46, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/more"
+			}
+		}
+		Menubar:hover {
+				bgcolor = "ClientBG"
+			render
+			{
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				3 = "image(x0+46, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/more"
+			}
+		}
+		"MenuBar MenuButton"
+		{
+				bgcolor = "ClientBG"
+			render_bg{}
+			minimum-height=44
+			padding-left="32"
+			render_bg {
+				
+				
+			}
+			
+			
+		}
+		"MenuBar MenuButton:hover"
+		{
+			bgcolor = "ClientBG"
+			render_bg {
+				
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				
+
+				
+			}
+			
+
+		}
+		"MenuBar MenuButton:selected"
+		{
+			bgcolor = "ClientBG"
+			render_bg {
+				
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+			}
+
+		}
+
+	
+
+	    RootMenu {
+			bgcolor = "ClientBG"
+			render_bg {
+				
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				
+
+				
+			}
+			
+			
+		}
+
+		FrameTitle {
+			textcolor = "none"
+			
+		
+			
+		}
+
+		ClientTitle {
+			
+			textcolor = "none"
+			font-family=Title
+			font-size=17
+			inset="8 0 0 8"
+			
+		}
+
+		view_friends {
+			textcolor = "none"
+			inset="0 20 0 0"
+			bgcolor = "ClientBG"
+			render_bg {
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/friends"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/friends"
+			}
+		}
+
+		view_friends:hover {
+				bgcolor = "ClientBG"
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/sidebar/friends"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+		}
+		view_friends:active {
+				bgcolor = "ClientBG"
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/sidebar/friends"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				
+			}
+		}
+		
+		
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// = = = = = = This is the VAC Ban Button wich appears only if you are VAC Banned(made it an icon rather than text) = = = = //
+
+		support_alert {
+			textcolor = "white75"
+				bgcolor = "ClientBG"
+			padding-right = "3"
+			padding-left = "15"
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+			}
+		}
+
+		support_alert:hover {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white05)"
+			}
+		}
+
+		support_alert:active {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white10)"
+			}
+		}
+
+		support_alert_ack {
+			textcolor = "white75"
+			bgcolor = "none"
+			padding-right = "3"
+			padding-left = "15"
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+			}
+		}
+
+		support_alert_ack:hover {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white05)"
+			}
+		}
+
+		support_alert_ack:active {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white10)"
+			}
+		}
+
+		inboxmenuitem {
+			textcolor = "white"
+			font-size = "18"
+			padding-left="0"
+		}
+
+
+		announcement_button {
+				bgcolor = "ClientBG"
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/news"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/news"
+
+			}
+		}
+			
+		announcement_button:hover {
+				bgcolor = "ClientBG"
+			render_bg {
+				
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/sidebar/news"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				
+			}
+		}
+
+		announcement_button:active {
+				bgcolor = "ClientBG"
+			render_bg {
+				
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/sidebar/news"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				
+			}
+		}
+
+		announcement_button:selected {
+				bgcolor = "ClientBG"
+			render {
+				1 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/noti)"
+			}
+		}
+
+	//--------------------            BOTON MENSAJES      --------------------
+
+		inbox_button {
+			textcolor = "white"	
+			font-family = "basefont"
+			font-style = "none"
+			minimum-width=30
+			render {}
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/inbox)"
+				
+			
+			}
+		}
+
+		inbox_button:hover {
+			textcolor = "white"
+			bgcolor = "none"
+			render {}
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/hover/inbox)"
+				
+				10="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
+
+				///////////////////esquina izquierda inferior/////////////////////////////
+				1="image(x0-1,y1-4,x0+2,y1+4, materiales/button/ai)"
+
+				////////////////////parte inferior/////////////////////////////////////////
+				2="image_tiled(x0+4,y1-2,x1-4,y1+4, materiales/button/am)"
+				
+                ////////////medio de parte izquierda///////////////////////////////////////////////////
+				3="image_tiled(x0-3,y0+4,x0+2,y1-4, materiales/button/mi)"
+				
+				//////////////////////////esquina izquierda superior///////////////////////////////////////////
+				5="image(x0-1,y0-0,x0+2,y0+3, materiales/button/ti)"
+
+                ////////////////////////Parte del medio superior//////////////////////////////
+				6="image_tiled(x0+4,y0-2,x1-4,y0+2, materiales/button/tm)"
+
+                //////////////medio derecha/////////////////////////////////////////////////////////////////////
+				4="image_tiled(x1-2,y0+4,x1+3,y1-4, materiales/button/md)"
+
+				/////////////////////////esquina derecha superior///////////////////////////////////////////////
+				7="image(x1-4,y0-0,x1+3,y0+2, materiales/button/td)"
+
+				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
+				8="image(x1-4,y1-4,x1+3,y1+2,materiales/button/ad)"
+
+			}
+
+		
+		}
+
+		inbox_button:selected {
+			textcolor = "white"
+			bgcolor = "none"
+			render {}
+			render_bg {
+				0 = "image(x0,y0-1,x1,y1,graphics/fluent/icons/navbar/sidebar/hover/inbox)"
+				
+				10="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
+
+				///////////////////esquina izquierda inferior/////////////////////////////
+				1="image(x0-1,y1-4,x0+2,y1+4, materiales/button/ai)"
+
+				////////////////////parte inferior/////////////////////////////////////////
+				2="image_tiled(x0+4,y1-2,x1-4,y1+4, materiales/button/am)"
+				
+                ////////////medio de parte izquierda///////////////////////////////////////////////////
+				3="image_tiled(x0-3,y0+4,x0+2,y1-4, materiales/button/mi)"
+				
+				//////////////////////////esquina izquierda superior///////////////////////////////////////////
+				5="image(x0-1,y0-0,x0+2,y0+3, materiales/button/ti)"
+
+                ////////////////////////Parte del medio superior//////////////////////////////
+				6="image_tiled(x0+4,y0-2,x1-4,y0+2, materiales/button/tm)"
+
+                //////////////medio derecha/////////////////////////////////////////////////////////////////////
+				4="image_tiled(x1-2,y0+4,x1+3,y1-4, materiales/button/md)"
+
+				/////////////////////////esquina derecha superior///////////////////////////////////////////////
+				7="image(x1-4,y0-0,x1+3,y0+2, materiales/button/td)"
+
+				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
+				8="image(x1-4,y1-4,x1+3,y1+2,materiales/button/ad)"
+
+			}
+		}
+
+		inbox_button:disabled {
+			textcolor = "white"
+			bgcolor = "none"
+			render_bg {
+				0 = "image(x0,y0-1,x1,y1,graphics/fluent/icons/navbar/sidebar/hover/inbox)"
+				
+			}
+		}
+
+	// --------------------            BOTON MENSAJES      --------------------
+
+		inbox_button_active {
+			textcolor = "white75"
+			font-family=semibold2
+			font-size=17
+			inset="1 0 0 0"
+			margin-top=4
+			padding-right=21
+			bgcolor = "none"
+			render_bg {
+				0 = "image(x1-30,y0-1,x1,y1,graphics/fluent/icons/navbar/sidebar/inbox)"
+				
+
+			}
+		}
+
+		inbox_button_active:hover {
+			bgcolor = "none"
+			textcolor = "white"
+			render_bg {
+				0 = "image(x1-30,y0-1,x1,y1,graphics/fluent/icons/navbar/sidebar/hover/inbox)"
+				
+				10="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
+
+				///////////////////esquina izquierda inferior/////////////////////////////
+				1="image(x0-1,y1-4,x0+2,y1+4, materiales/button/ai)"
+
+				////////////////////parte inferior/////////////////////////////////////////
+				2="image_tiled(x0+4,y1-2,x1-4,y1+4, materiales/button/am)"
+				
+                ////////////medio de parte izquierda///////////////////////////////////////////////////
+				3="image_tiled(x0-3,y0+4,x0+2,y1-4, materiales/button/mi)"
+				
+				//////////////////////////esquina izquierda superior///////////////////////////////////////////
+				5="image(x0-1,y0-0,x0+2,y0+3, materiales/button/ti)"
+
+                ////////////////////////Parte del medio superior//////////////////////////////
+				6="image_tiled(x0+4,y0-2,x1-4,y0+2, materiales/button/tm)"
+
+                //////////////medio derecha/////////////////////////////////////////////////////////////////////
+				4="image_tiled(x1-2,y0+4,x1+3,y1-4, materiales/button/md)"
+
+				/////////////////////////esquina derecha superior///////////////////////////////////////////////
+				7="image(x1-4,y0-0,x1+3,y0+2, materiales/button/td)"
+
+				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
+				8="image(x1-4,y1-4,x1+3,y1+2,materiales/button/ad)"
+
+			}
+		}
+
+		inbox_button_active:selected {
+			bgcolor = "none"
+			render_bg {
+				0 = "image(x1-30,y0-1,x1,y1,graphics/fluent/icons/navbar/sidebar/inbox)"
+				
+
+			}
+		}
+
+		inbox_button_active:disabled {
+		    textcolor = "white"
+			bgcolor = "none"
+			render_bg {
+					0 = "image(x1-30,y0-1,x1,y1,graphics/fluent/icons/navbar/sidebar/inbox)"
+			}
+		}
+
+		parental_lock_button {
+			bgcolor = "none"
+			render_bg {
+					1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/unlock)"
+					0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/unlock)"
+			}
+		}
+
+		parental_lock_button:hover {
+			render_bg {
+					1 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/unlock)"
+					2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+					3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+		}
+
+		parental_lock_button:selected {
+				render_bg {
+					1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/lock)"
+					2 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/lock)"
+					
+			}
+		}
+
+		parental_lock_button:selected:hover {
+			render_bg {
+					1 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/lock)"
+					2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+					3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+		}
+		parental_lock_button:selected:hover:active {
+			render_bg {
+					1 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/lock)"
+					2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+		}
+
+		VRButton {
+			textcolor=none
+			render_bg {
+					1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/headsetvr)"
+					0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/headsetvr)"
+			}
+			bgcolor = "none"
+			
+		}
+
+		VRButton:hover {
+			textcolor=none
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/headsetvr)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+			bgcolor = "none"
+		}
+
+		VRButton:active {
+			textcolor=none
+			bgcolor = "none"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/headsetvr)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+		}
+
+		VRButton:disabled {
+			textcolor=none
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/headsetvr)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+			bgcolor = "none"
+		}
+
+		
+		VRButtonExit
+		{
+			bgcolor="none"
+			textcolor=none
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/headsetvr)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/headsetvr)"
+
+				
+			}
+			
+		}
+		VRButtonExit:hover
+		{
+			textcolor=none
+			bgcolor="white05"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/headsetvr)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+			
+		}
+		VRButtonExit:active
+		{
+			bgcolor="white10"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/sidebar/headset)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+			
+		}
+		VRButtonExit:disabled
+		{
+			bgcolor="none"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/sidebar/headsetvr)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+			
+		}
+
+		FullscreenButton {
+			bgcolor = "ClientBG"
+			textcolor = "none"
+			bgcolor="none"
+			render_bg {
+			
+				2 = "image(x0, y0+1, x0, y0+0, graphics/fluent/icons/navbar/sidebar/bigpicture"
+				1 = "image(x0, y0+1, x0, y0+0, graphics/fluent/icons/navbar/sidebar/bigpicture"
+			}
+		}
+
+		FullscreenButton:hover {
+			bgcolor = "ClientBG"
+			textcolor = "none"
+			render_bg {
+				1 = "image(x0, y0+1, x0, y0+0, graphics/assets/accent/icons/sidebar/bigpicture"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+			}
+		}
+		FullscreenButton:active {
+			bgcolor = "ClientBG"
+			textcolor = "none"
+			
+			render_bg {
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/hover"
+				1 = "image(x0, y0+1, x0, y0+0, graphics/assets/accent/icons/sidebar/bigpicture"
+				
+			}
+		}
+		
+		FullscreenButton:disabled {
+			textcolor = "none"
+			bgcolor = "none"
+		}
+		
+		AddGameButton {
+			bgcolor = "ClientBG"
+			textcolor = "none"
+			bgcolor=clientbg
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/titlebar/add"
+			}
+		}
+
+		AddGameButton:hover {
+			bgcolor = "ClientBG"
+			textcolor = "none"
+			bgcolor=clientbg
+			render_bg {
+				0 = "image(x0, y0+0, x0, y0+0, graphics/titlebar/add_h"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/titlebar/hover"
+
+				
+			}
+		}
+
+	}
+
+	
+	layout
+	{
+		region { name=top align=top width=max height=48 margin-left=40}
+		
+				
+		//Content
+		place { 
+			region="navbars" 
+			control="UINavigatorPanel" 
+			align="left" 
+			
+			width="max" 
+			height=max
+			y=0
+			
+			
+			
+			}
+
+
+		//Controls
+		place { control="XPVistaAlert,SupportAlert," region=top align=right end-right=frame_minimize  spacing=0 margin-right=3 height=39 }
+		place { control="" region=top align=right end-right=frame_minimize margin-right=1 height=40 }
+		place [$OSX] { control="UIStatusPanel" region=top align=right margin-right=1 width=27 height=40 }
+		place { region=lefty control="" margin-left=18 margin-top=12 height=23 width=120 }
+		place { control="ClientTitle" align=top-center height=5 width=max}
+	
+	   region 
+	   { 
+			
+			name="navbars" 
+			height="max"
+			
+			
+			
+			
+					
+	   }
+		
+        //help by mixter213 
+
+		 
+	
+		place { 
+			
+			control="" 
+			margin-left=8 
+			margin-top=50
+			dir=down 
+			height=58	 
+			width=348   }
+		
+		place { 
+			
+			control="AnnouncementButton, startvr, exitvr ,view_friends,fullscreen ,ParentalLockButton,universe_label"
+			
+			spacing=4
+			dir=down
+			margin-top=500
+			margin-left=600 
+			width=64
+			height=58
+			
+	  	}
+
+		place { control="MenuBar" height=44 width=88 margin-left=61 align=left margin-top=4	dir=right }
+		place { control=add_game height=38 width=36 start="MenuBar" margin-left=4 margin-top=4	}
+		
+		place { control=InboxButton height=42 margin-top=4 margin-right=1 align=right end-right=AccountButton}
+		place { control="AccountButton" spacing=0
+			
+			end-right=frame_minimize
+			margin-right=0
+			align=right
+			margin-top=1
+			
+			height=50	 
+			}
+			place { end-right= control=InboxB-utton height=50 width=50 align=right}
+		place { start=view_friends margin-top=6 control="inboxold" height=64 width=350 dir=down}
+		place { 
+			
+			control="" 
+			align=bottom 
+			margin-top=
+			height="32"
+			
+			width="max"
+			
+			}
+
+		//cerrrabrirminizar
+
+		place [!$OSX] { 
+
+			control="frame_minimize,frame_maximize,frame_close" 
+
+			margin-right=1
+			align=right 
+			width=46
+			height=33
+          
+
+			}
+		region { 
+			
+			name="downloadbar" 
+			height="max" 
+			
+			margin-left=6
+			 
+			
+			
+			}
+		place { 
+			region="downloadbar" 
+			control="UIStatusPanel" 
+			spacing=8 
+			align=bottom 
+			dir=down 
+			height="72" 
+			width="75"
+			margin-left=2
+			}
+
+	
+	
+		place { control="frame_captiongrip" margin=4 width=max height=120 }
+		place { control= margin-left=9998}
+		/ocultos
+		place { control=",a,New," width=0 height=0 x=9999 }
+}

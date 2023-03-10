@@ -1,0 +1,15 @@
+This version is experimental and requires extra steps.
+
+1-.First and foremost you must close steam.
+
+2-.Create a steam shortcut.
+
+3-. Go to the properties of the steam.exe shortcut add the parameter -noverifyfiles. At the end of the exe path. For more information research on the internet how to add parameters in shortcuts.
+
+4-. Copy the contents of "drop in steam folder" to the main steam folder and replace.
+
+5-. Copy the resource folder to the skin folder and replace.
+
+6-. Run Steam using the shortcut with the parameter -noverifyfiles.
+
+Attention: Keep in mind that while using this layout you should always start Steam with -noverifyfiles, otherwise steam will update and break the skin.

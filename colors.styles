@@ -11,6 +11,20 @@
 ////////////////////////
 //======No Color======//
 		none="0 0 0 0"
+/////////////////////////////////////
+//======Dracula======//
+		DraculaHighContrastBG = "21 19 32 255"
+		DraculaBG = "21 19 32 255"
+		DraculaHover = "40 42 54 255".
+		DraculaHoverA = "40 42 54 255"
+		DraculaPurple = "189 147 249 255"
+		DraculaGreen = "68 204 102 255"
+		DraculaRed = "255 85 85 255"
+		DraculaRed45 = "255 85 85 145"
+		DraculaText = "248 248 242 255"
+		DraculaText_d = "248 248 242 113.25 "
+		
+
 
 /////////////////////////////////////
 //======Base Background Color======//

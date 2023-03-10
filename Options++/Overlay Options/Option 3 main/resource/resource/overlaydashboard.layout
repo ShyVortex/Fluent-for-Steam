@@ -1,0 +1,195 @@
+"resource/layout/overlaydashboard.layout"
+{
+	
+	controls
+	{
+		BaseDashboardPanel 
+		{ 
+			controlname="EditablePanel" 
+			style="overlaymain"	
+		}
+		TaskbarPanel
+		{ 
+			controlname="EditablePanel" 
+		}
+		TopFadePanel
+		{
+			controlname="EditablePanel"
+			style=topfade
+			zpos=-1
+			mouseinputenabled=0
+		}
+		BottomFadePanel
+		{
+			controlname="EditablePanel"
+			style=bottomfade
+			zpos=-1
+		}
+
+		GameName
+		{
+			controlname="Label"
+			labeltext="%gamename%"
+			style=topbar
+			textalignment=east
+		}
+		PowerMeterDim
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_dim"
+		}
+		PowerMeterBright
+		{
+			controlname=	"ImagePanel"
+			image=			"resource/battery_bright"
+		}
+
+		CloseButton	{ controlname="URLLabel" labeltext="#Overlay_Taskbar_Close" style="OverlayURLLabel"}
+		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style="hotkey" }	
+		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 style="LabelOverlay"}
+	}
+
+	colors
+	{
+
+		degrade = "0 0 0 230"
+
+
+	}
+
+	styles
+	{
+		overlaymain
+		{
+					
+		}
+		
+		EditablePanel {
+			textcolor=white
+			render_bg
+			{
+				
+			}
+		}
+		OverlayURLLabel
+		{
+			bgcolor="none"
+			textcolor="none"
+			render_bg
+			{
+				1="image( x0, y0+0, x0, y0+0, graphics/overlay/bottom/close)"
+			}
+		}
+		OverlayURLLabel:hover
+		{
+			bgcolor="none"
+			textcolor="none"
+			render_bg
+			{
+				1="image( x0, y0+0, x0, y0+0, graphics/overlay/bottom/close)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+			}
+		}
+
+		
+		////imagenes posbiles /for degrades////
+		bottomfade
+		{
+			
+				bgcolor=black75	
+					
+								
+		}
+		////gamename
+		topbar
+		{
+			font-size="none"
+			font-family=none
+			textcolor=red
+		}
+		hotkey
+		{
+			bgcolor="none"
+			textcolor="none"
+		}
+		TopFade
+		{
+			bgcolor="none"
+			textcolor="none"
+			render_bg {1="image( x0, y0+0, x0, y0+0, overlay/big/divider)"}
+		
+		}
+
+		LabelOverlay
+		{
+			bgcolor="none"
+			textcolor="red"
+		}
+	}
+
+	LAYOUT
+	{
+		/for botton de cerrar
+		
+	
+		//Time Panel
+
+		
+		place { 
+
+			control="SessionText" 
+			align=top-right 
+			dir=down 
+			start=clock
+		
+		}
+
+		////===web browser, settings===////ck
+		place { control="TaskbarPanel" align=top-center margin-top=118 margin-right=100 height=44 width=120 }
+
+		place { 
+
+			controls="CloseButton" 
+			align=bottom-right
+			margin-bottom=24
+			margin-right=34
+			width=44
+			height=44
+			 
+			
+		}
+	
+		
+
+		place {
+
+			controls="TopFadePanel"
+			align="top-center"
+			margin-top=165
+			width=880
+			height=2
+
+
+		}
+	
+		/for degradez or logosteam
+		place { 
+
+			control="BottomFadePanel" 
+			width=max 
+			height=max 
+			
+			}
+		
+		/for bateriadim
+		place { 
+			
+			control="PowerMeterDim" 
+			align=left 
+			width=96 }
+
+		/for ocultar
+
+		place { control="HotkeyExplain,HotkeyLabel" align=right margin-right=-999 }
+	}
+}

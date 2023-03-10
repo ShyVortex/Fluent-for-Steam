@@ -141,10 +141,29 @@
 	{
 		Black="0 0 0 0"
 	}
+		styles {
+		
+		Notification {
+			minimum-width=330
+			minimum-height=70
+			render_bg
+			{
+		
+				1="image( x0, y0+8, x0, y0+0, overlay/addfriend)"
+			
+			
+			}
+		}
+		label {
+			font-size=18
+			textcolor=white
+			font-family=basefont
+		}
+	}
 	layout
 	{
-		place { control="ImageAvatar" x=13 y=13 }
-		place { control="LabelSender,LabelInfo,LabelFriendsList" x=67 dir=down margin=11 margin-left=0 margin-bottom=0 }
-		place { control="LabelHotkey" y=76 width=250 }
+		place { control="ImageAvatar" align=right margin-right=25 y=2899}
+		place { control="LabelSender,LabelInfo,LabelFriendsList"  y=8 width=232 dir=down margin=13  }
+		place { control="LabelHotkey" y=9999 width=1 }
 	}
 }

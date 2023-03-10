@@ -1,0 +1,75 @@
+"resource/layout/uistatuspanel.layout"
+{
+	controls
+	{
+		StatusDownloading { controlname=URLLabel style="StatusLabel" labelText="" URLText="steam://open/downloads" }
+		StatusPaused{ controlname=URLLabel style="StatusLabelDim" labelText="" URLText="steam://open/downloads" }
+		StatusComplete { controlname=URLLabel style="StatusLabelDim" labelText="" URLText="steam://open/downloads" }
+		StatusProgressbar	{ controlname="ProgressBar" style="SlimProgressBar" barinset=0 continuous=1 } 
+	}
+	
+	styles
+	{
+		//estado de la descarga
+		StatusLabel
+		{
+			textcolor="none"
+			font-family=button
+			bgcolor="none"
+			render {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/download"
+				
+			}
+		}
+		StatusLabel:hover
+		{
+			bgcolor=white05
+			render {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/download"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/download"
+				
+			}
+		}
+		
+		
+		
+		// Barra de descarga
+		SlimProgressBar
+		{
+			textcolor = "accent"
+			bgcolor="white05"
+			render {
+				1 = "image(x0, y0, x0, y0, graphics/fluent/icons/navbar/compact/downloadmask"
+				
+			}
+		}
+
+
+		//hidden
+		StatusLabelDim
+		{
+			textcolor="none"
+			bgcolor="green"
+			
+			
+		}
+		
+		
+	}
+	
+	layout
+	{
+	  
+
+	  region { name="TitleRegion" width=max height=28 align=top margin=5 } 
+	  region { name="statusRegion" y=28 width=max height=28 align=bottom margin=6 } 
+	  region { name="ProgressRegion"  width=max height=10 align=top margin-top=2 }
+	 	
+	  place { control="StatusDownloading" height=50	 width=50 }
+	  place { control="StatusProgressbar"  width=36 margin-left="2" margin-bottom=2 height=6 align="bottom" }
+		///hidden
+	  place {control="StatusPaused, StatusComplete" margin-left=9999}
+
+	}
+	
+}

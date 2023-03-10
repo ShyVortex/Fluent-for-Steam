@@ -142,25 +142,42 @@
 		Black="0 0 0 0"
 	}
 	styles {
+		Notification {
+			minimum-width=330
+			minimum-height=78
+				render_bg
+			{
+				
+				14 = "image(x0,y0+4,x1,y1,overlay/chatmsg)"
+				
+			
+			}
+		}
 	
 		label {
 			font-size=18
-			font-family=basefont
+			font-family=semibold2
 			
 		}
 		ChatMsgNotification {
-			minimum-height=360
+			
+
+		}
+		LabelSender {
+			font-size=18
+			font-family=semibold2
+			
 		}
 
 	}
 	layout
 	{
 		//Avatar
-		place { control="ImageAvatar" x=13 y=13 }
+		place { control="ImageAvatar" align=right width=40 height=40 x=17 y=28 }
 
 		//Panel
-		region { name=panel height=74 overflow=scroll-vertical }
-		place { control="LabelSender,LabelMessage" region=panel x=67 y=6 dir=down margin=11 margin-left=0 margin-bottom=0 }
+		region { name=panel  height=74  overflow=scroll-vertical }
+		place { control="LabelSender,LabelMessage" y=8   width=232 dir=down margin=13  }
 
 		//Footer
 		place { control="LabelHotkey,LabelInfo" y=9999 width=250 }

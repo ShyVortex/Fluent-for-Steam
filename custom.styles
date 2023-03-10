@@ -16,6 +16,8 @@ Button = "Segoe UI Variable Static Text"
 Title = "Segoe UI Variable Static Small Text"
 FriendsPanel = "Segoe UI Variable Static Display"
 
+FiraCode = "Fira Code Medium"
+FiraCodeBold = "Fira Code Bold"
 
 basefont="segoe ui variable text bold" [$OSX] 
 semibold="Helvetica Neue Medium" [$OSX] semilight="Helvetica Neue Light" [$OSX] 

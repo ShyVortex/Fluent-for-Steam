@@ -1,0 +1,92 @@
+"resource/layout/overlay_communityhubpanel.layout"
+{
+	controls
+	{
+		CommunityHubDetailPanel { controlname="COverlay_Details_CommunityHub_Panel" style=detailsbox }
+		TitleText { controlname="label" labeltext="#Overlay_CommunityHub_Panel_Title" style=detailsboxtitle }
+		NumContributionsText { controlname="label" labeltext="#Overlay_CommunityHub_Panel_NumContributions"  style=highlight }
+
+		ViewCommunityHub { controlname="Button" labeltext="#Overlay_View_CommunityHub" command="viewcommunityhub" }
+	}
+	
+	styles
+	{	
+		detailsboxtitle {
+			font-size=19
+			font-family=semibold2
+			textcolor=white
+		}
+		highlight {
+
+			textcolor=none
+		}
+		Button
+		{
+			bgcolor="none"
+			padding=0
+			textcolor="none"
+			render_bg
+			{
+				1="image( x0, y0+0, x0, y0+0, overlay/big/tile)"
+				2="image( x0, y0+6, x0, y0+0, overlay/big/community)"
+			}
+		}
+		Button:hover
+		{
+			bgcolor="none"
+			render_bg
+			{
+				1="image( x0, y0+0, x0, y0+0, overlay/big/tile)"
+				2="image( x0, y0+0, x0, y0+0, overlay/big/tile)"
+				3="image( x0, y0+6, x0, y0+0, overlay/big/color/community)"
+				
+			}	
+		}
+		Button:active
+		{
+			bgcolor="red"
+			render_bg
+			{
+				1="image( x0, y0+0, x0, y0+0, graphics/overlay/bottom/hover)"
+				2="image( x0, y0+0, x0, y0+0, graphics/overlay/bottom/CommunityHub)"
+			}		
+		}
+	}
+	layout
+	{
+		///====label====///
+		place { controls=ViewCommunityHub width=max height=max }
+
+		region {
+
+			name="text"
+			align=bottom
+						
+
+
+		}	
+		place { 
+			
+			margin-left=12 margin-right=12
+			margin-top=115
+			align=top-center
+		    control="TitleText"   
+			
+	    }
+		place { 
+
+			region="text"
+			control="NumContributionsText" 
+		
+
+			
+			
+			}
+	
+		
+		
+	}
+}
+
+		
+		

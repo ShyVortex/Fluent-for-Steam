@@ -1,6 +1,7 @@
 "accent.styles"
 {
 	include "custom.styles"
+	include "colors.styles"
 	colors
 	{
 
@@ -13,6 +14,7 @@
 		none="0 0 0 0"
 ////////////////////////////
 //======Accent Colors======//
+		accent_menuitem_text=white
 		accent="19 94 242 255"
 		accent_h="19 94 242 175"
 		accent_p="245 233 77 255"
@@ -37,7 +39,7 @@
 		pierrexiv="255 20 147 255"
 
 ////////////////////////////		
-
+			
     }
     
 }

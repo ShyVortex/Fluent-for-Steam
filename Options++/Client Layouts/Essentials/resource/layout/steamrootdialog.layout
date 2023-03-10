@@ -1,0 +1,676 @@
+"resource/layout/steamrootdialog.layout" { 
+
+	//include "resource/layout/macosbuttons.styles"
+
+	styles {
+		FrameMinimizeButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			
+			render_bg {
+				1 = "image(x0, y0, x0, y0, caption/compact/minimizar"
+			}
+		}
+		FrameMinimizeButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white07
+			
+			
+		}
+		FrameMinimizeButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white05
+			
+		}
+		////////////////////////////BOTON MAXIMIZAR///////////////////////////////////////	
+		FrameMaximizeButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			render
+			{
+				0="image(x0+0,y0+0,x1,y1,caption/compact/maximizar)"
+			}
+		}
+		FrameMaximizeButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white07
+			
+		}
+		FrameMaximizeButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor="white05"
+			
+		}
+        /////////////////////////////////////boton restaurar////////////////////////////////////////
+         FrameRestoreButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			
+			render
+			{
+				0="image(x0+0,y0+7,x1,y1,caption/compact/restore)"
+			}
+		}
+		FrameRestoreButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white07
+			render
+			{
+				0="image(x0+0,y0+7,x1,y1,caption/compact/restore)"
+			}
+		}
+		FrameRestoreButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white05
+			render
+			{
+				0="image(x0+0,y0+7,x1,y1,caption/compact/restore)"
+			}
+		}
+		///////////////////////////////////boton close/////////////////////////////////////////////////////////////
+        FrameCloseButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			render
+			{
+				0="image(x0,y0,x1,y1,caption/compact/close)"
+			}
+		}
+		FrameCloseButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=Red75
+			
+		}
+		FrameCloseButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=RED45
+		
+		}
+		FrameCloseButton:disabled [$WIN32||$WINDOWS||$LINUX]
+		{
+			render_bg{}
+			image="caption/compact/cerrarnormal"
+		}
+		
+
+		
+		MenuBar
+		{
+				bgcolor = "none"
+			render
+			{
+				
+				
+
+			}
+		}
+		Menubar:hover {
+			bgcolor = "white05"
+			
+		}
+		"MenuBar MenuButton"
+		{
+						padding-right=36
+
+				bgcolor = "none"
+			render_bg{
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
+			}
+		
+				
+				
+			}
+			
+			
+		
+		"MenuBar MenuButton:hover"
+		{
+						padding-right=36
+
+			bgcolor = "white05"
+			render_bg
+			{
+				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/more"
+
+			}
+			
+
+		}
+		"MenuBar MenuButton:selected"
+		{
+			bgcolor = "white05"
+			render_bg
+			{
+				0 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/more"
+			}
+
+		}
+
+	
+
+	    RootMenu {
+			bgcolor = "none"
+			render_bg {
+				
+				
+
+				
+			}
+			
+			
+		}
+		FrameTitle {
+			textcolor = "none"
+			bgcolor=none
+			minimum-height=49
+			render_bg {
+
+				//1 = "image (x0+12, y0+11, x1, y1, graphics/fluent)"
+				3="fill(x0,y0+48,x1,y1, none)"
+
+				
+
+				
+			}
+			
+			
+		}
+
+		ClientTitle {
+			
+			textcolor = "none"
+			font-family=Title
+			font-size=17
+			//inset="32 0 0 8"
+			render_bg {
+
+				
+
+				
+
+				
+			}
+			
+		}
+
+		view_friends {
+			textcolor = "none"
+				bgcolor = "none"
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/friends"
+			}
+		}
+
+		view_friends:hover {
+				bgcolor = "white05"
+		
+		render_bg {
+	
+				2 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/friends"
+			}
+		}
+		
+		view_friends:active {
+			bgcolor = "white07"
+			render_bg {
+				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/friends"
+			}
+        }
+		
+		view_friends:selected {
+			
+			bgcolor = "white07"
+			render_bg {
+				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/news"
+			}	
+		}
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// = = = = = = This is the VAC Ban Button wich appears only if you are VAC Banned(made it an icon rather than text) = = = = //
+
+		support_alert {
+			textcolor = "white75"
+				bgcolor = "ClientBG"
+			padding-right = "3"
+			padding-left = "15"
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+			}
+		}
+
+		support_alert:hover {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white05)"
+			}
+		}
+
+		support_alert:active {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white10)"
+			}
+		}
+
+		support_alert_ack {
+			textcolor = "white75"
+			bgcolor = "none"
+			padding-right = "3"
+			padding-left = "15"
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+			}
+		}
+
+		support_alert_ack:hover {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white05)"
+			}
+		}
+
+		support_alert_ack:active {
+			render_bg {
+				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				1 = "fill(x0,y0,x1,y1,white10)"
+			}
+		}
+
+		inboxmenuitem {
+			textcolor = "white"
+			font-size = "18"
+			minimum-height=32
+		}
+
+				inboxmenuitem:hover {
+			textcolor = "accent_menuitem_text"
+			font-size = "18"
+			
+		}
+		inboxmenuitem_active {
+			textcolor = "white"
+			font-size = "18"
+			
+		}
+
+		announcement_button {
+				bgcolor = "none"
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/news"
+			}
+		}
+			
+		announcement_button:hover {
+			bgcolor = "white05"
+			render_bg {
+				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/news"
+			}
+		}
+
+		announcement_button:active {
+			bgcolor = "white07"
+			render_bg {
+				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/news"
+			}
+		}
+
+		announcement_button_active {
+				bgcolor = "none"
+			render {
+				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+			}
+		}
+		announcement_button_active:hover {
+				bgcolor = "white05"
+			render {
+				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+			}
+		}
+
+	//--------------------            BOTON MENSAJES      --------------------
+
+		inbox_button {
+			textcolor = "none"	
+			bgcolor = "none"
+			font-family = "basefont"
+			font-style = "none"
+			render {}
+			render_bg {
+
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/alert)"
+				
+			}
+		}
+
+		inbox_button:hover {
+
+
+	
+			textcolor = "white"
+			bgcolor = "white05"
+			render {}
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/compact/alert)"
+			
+
+			
+
+			}
+		}
+
+		inbox_button:selected {
+			bgcolor = "white07"
+			render {}
+			render_bg {
+					0 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/alert"
+				
+			}
+		}
+
+		inbox_button:disabled {
+				bgcolor = "ClientBG"
+			textcolor = "white"
+			bgcolor = "none"
+			render_bg {
+					0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/inbox)"
+			}
+		}
+
+	// --------------------            BOTON MENSAJES      --------------------
+		
+		inbox_button_active {
+			textcolor = "none"
+			font-family=semibold2
+			font-size=18
+			bgcolor = "none"
+			render_bg {
+				0 = "image(x0,y0+1,x1,y1,graphics/fluent/icons/navbar/compact/alertunread)"
+				
+				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+
+			}
+		}
+
+		inbox_button_active:hover {
+			bgcolor = "none"
+			bgcolor= white03
+			textcolor = "none"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/compact/alertunread)"
+				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+			}
+		}
+
+		inbox_button_active:selected {
+			bgcolor = "white07"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/compact/alertunread)"
+				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+			}
+		}
+
+		parental_lock_button {
+			bgcolor = "none"
+			image = "graphics/fluent/icons/navbar/parent_unlocked"
+			padding-right = "4"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/unlock)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/unlock)"
+			
+			}
+		}
+
+		parental_lock_button:hover {
+			bgcolor = "white05"
+			render_bg {
+
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/unlock)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/unlock)"
+			
+			}
+		}
+
+		parental_lock_button:selected {
+			bgcolor = "none"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/lock)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/lock)"
+
+			}
+		}
+
+		parental_lock_button:selected:hover {
+			bgcolor = "white05"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/lock)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/lock)"
+				
+
+			}
+
+		}
+
+		VRButton {
+			
+			bgcolor = "none"
+			textcolor=none
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+			}
+			
+			
+		}
+
+		VRButton:hover {
+			bgcolor=white05
+			textcolor=none
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+			}
+			bgcolor = "white05"
+		}
+
+		VRButton:active {
+			textcolor=none
+			bgcolor = "none"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+			}
+		}
+
+		VRButton:disabled {
+			textcolor=none
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+				1 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+				2 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+			}
+			bgcolor = "none"
+		}
+
+		
+		VRButtonExit
+		{
+			bgcolor="none"
+			textcolor=none
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+			}
+			
+		}
+		VRButtonExit:hover
+		{
+			textcolor=none
+			bgcolor="white05"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/topbar/headsetvr)"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/hover"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/hover"
+			}
+			
+		}
+		VRButtonExit:active
+		{
+			bgcolor="white10"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/hover"
+			}
+			
+		}
+		VRButtonExit:disabled
+		{
+			bgcolor="none"
+			render_bg {
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/hover"
+			}
+			
+		}
+
+		FullscreenButton {
+			textcolor = "none"
+			bgcolor="none"
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/bigpicture"
+			}
+		}
+
+		FullscreenButton:hover {
+			bgcolor = "white05"
+			textcolor = "none"
+			render_bg {
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/bigpicture"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/bigpicture"
+			}
+		}
+		
+		FullscreenButton:active {
+			bgcolor = "white07"
+			textcolor = "none"
+			bgcolor="none"
+			render_bg {
+				
+				2 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/bigpicture"
+				
+
+
+			}
+		}
+		
+		FullscreenButton:disabled {
+			textcolor = "none"
+			bgcolor = "none"
+		}
+		
+		AddGameButton {
+			bgcolor = "red"
+			textcolor = "none"
+			bgcolor=clientbg
+			render_bg {
+				
+				0 = "image(x0, y0, x0, y0, graphics/fluent/icons/navbar/compact/151"
+
+			}
+		}
+
+		AddGameButton:hover {
+			textcolor = "none"
+			bgcolor=white05
+			render_bg {
+				
+				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/addgame"
+
+			}
+		}
+
+		AddGameButton:selected {
+			
+			bgcolor=white07
+			textcolor = "none"
+			render_bg {
+				
+				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/addgame"
+				
+
+			}
+		}
+
+	}
+
+	
+layout
+	{
+		region { name=top align=top width=max height=48 margin-left=40}
+		
+				
+		//Content
+		place { 
+			region="navbars" 
+			control="UINavigatorPanel" 
+			align="left" 
+			
+			width="max" 
+			height=max
+			
+			
+			
+			
+			}
+
+
+		//Controls
+		place { control="XPVistaAlert,SupportAlert," region=top align=right end-right=frame_minimize  spacing=0 margin-right=3 height=39 }
+		place [$OSX] { control="UIStatusPanel" region=top align=right margin-right=1 width=27 height=40 }
+		place { control="ClientTitle" align=top-center height=48 width=max}
+	
+	   region 
+	   { 
+			
+			name="navbars" 
+			height="max"
+			
+			
+			
+			
+					
+	   }
+		
+        //help by mixter213 
+
+		
+	
+	
+		place { control="AccountButton" end-right=MenuBar margin-right=6 align=right height=48 }
+		
+		place { 
+			
+			control=" MenuBar,startvr,exitvr,ParentalLockButton,view_friends,AnnouncementButton, UIStatusPanel, InboxButton," 
+			spacing=8
+			
+			dir=right 
+			align=right
+			margin-top=1
+			width=36
+			margin-right=142
+			height=48
+			
+			}
+		
+			place [!$OSX] { 
+
+			control="frame_minimize,frame_maximize,frame_close" 
+			margin-top=1
+			margin-right=1
+			align=right 
+			width=46
+			height=48
+          
+
+			}
+
+
+		place { control="frame_captiongrip" margin=4 width=max height=120 }
+	
+		//ocultos
+		place { control="universe_label,a,New,add_game,fullscreen" margin-left=-999 dir=down }
+	}
+}

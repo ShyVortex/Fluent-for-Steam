@@ -1,0 +1,46 @@
+"resource/layout/overlay_achievement_item.layout"
+{
+	controls
+	{
+		icon { controlname="ImagePanel" scaleimage=1 }
+		caption { controlname=label labeltext="#Overlay_Achievement_Recent" }
+		name { controlname=label style=name }
+	}
+	
+		styles
+	{
+		
+		ImagePanel
+		{
+			inset="-35 1 0 0"
+		
+			render
+			{
+			 0="image(x0,y0+1,x1,y1,graphics/overlay/bottom/logros/reward)"
+			}
+		}
+		
+		Label
+		{
+			textcolor=white
+			font-family=semibold2
+			font-size=16
+			
+		}
+		name
+		{
+			font-size=16
+			font-family=semibold2
+			textcolor=white
+		}
+	}
+
+	layout
+	{
+	
+		place { control=icon width=28 height=28 margin-top=2 align=left }
+		place { control="name" margin-left=36   }
+		place { control="caption" start=name dir=down}
+		
+	}
+}

@@ -145,47 +145,23 @@
 	styles
 	{
 		
-		notification {
-			
+		Notification {
+			minimum-width=330
+			minimum-height=90
 			render_bg
 			{
-				textcolor=red
 		
-				0="fill(x0+12,y0+11,x1-12,y1-16,clientbg)"
-
-				///////////////////esquina izquierda inferior/////////////////////////////
-				1="image(x0+5,y1-16,x0,y1, materiales/191919xx8px/ai)"
-
-				////////////////////parte inferior/////////////////////////////////////////
-				2="fill(x0+12,y1-16,x1-12,y1-9, clientbg)"
-				
-                ////////////medio de parte izquierda///////////////////////////////////////////////////
-				3="fill(x0+5,y0+10,x0+12,y1-16, clientbg)"
-				
-				//////////////////////////esquina izquierda superior///////////////////////////////////////////
-				5="image(x0+5,y0+4,x0,y0, materiales/191919xx8px/ti)"
-
-                ////////////////////////Parte del medio superior//////////////////////////////
-				6="fill(x0+12,y0+4,x1-12,y0+12, clientbg)"
-
-                //////////////medio derecha/////////////////////////////////////////////////////////////////////
-				4="fill(x1-12,y0+10,x1-5,y1-16, clientbg)"
-
-				/////////////////////////esquina derecha superior///////////////////////////////////////////////
-				7="image(x1-12,y0+4,x1,y0, materiales/191919xx8px/td)"
-
-				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
-				8="image(x1-12,y1-16,x1,y1,materiales/191919xx8px/ad)"
+				1="image( x0+2, y0+8, x0, y0+0, overlay/friendingame)"
 			
 			
 			}
-
 		}
 		
 		Label
 		{
 			font-family=basefont
 			font-size=18
+			textcolor=Red
 			
 			
 			
@@ -193,7 +169,7 @@
 		LabelGame
 		{
 			
-			font-family=basefont
+			font-family=semibold2
 			font-size=18
 			
 			
@@ -201,10 +177,10 @@
 	}
 	layout
 	{
-		place { control="ImageAvatar" x=13 y=13 }
+		place { control="ImageAvatar"  width=40 height=40 x=17 y=28 }
 		
-		place { region=texto control="LabelSender,LabelInfo,LabelGame" dir=down x=62 margin-top=10 margin-right=8 spacing=1}
-		place {region=texto  control="" x=63 y=32 margin-right=10 }
+		place { region=texto control="LabelSender,LabelInfo,LabelGame" x=2 y=8 dir=down margin-left=86 margin-top=13 margin-right=33 spacing=1}
+	
 		place { control="LabelHotkey" y=500 width=1 }
 		//Hidden
 		place { control="" width=1 align=right }
