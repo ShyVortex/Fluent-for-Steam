@@ -5,7 +5,7 @@
     AccountMenuStyle
     {
       bgcolor=ClientBG
-     	minimum-height=214
+     	minimum-height=250
       render
       {
          
@@ -138,6 +138,16 @@
       width=max 
       dir=down
    }
+
+   place { 
+      
+      control="sign_out_button" 
+      start=change_user_button
+      margin-top=4
+      height=32 
+      width=max 
+      dir=down
+    }
     
   }
 }
