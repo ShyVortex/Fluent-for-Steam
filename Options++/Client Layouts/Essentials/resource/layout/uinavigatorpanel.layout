@@ -609,8 +609,8 @@ styles
 				4 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
-				0 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
+				0 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 			}
 		}
 		BackButton:active
@@ -623,7 +623,7 @@ styles
 				4 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 
 			}
 		}
@@ -653,7 +653,7 @@ layout [$WINDOWS]
 			}
 
 	place { region="lefty" margin-left="8" control="back" margin-top=3 width=44 height=44  }
-	place {   control="label_store,label_library,label_news,label_friends,label_community,label_me,,label_console,label_library_zoom," start=back   spacing=0 height=44}
+	place {   control="label_store,label_library,label_news,label_friends,label_community,label_me,,label_console,label_library_zoom," start=back  margin-left=2 spacing=0 height=44}
 
 	//URLBar
 	place { control="label_community_new" margin-top=89 height=1 width=max}

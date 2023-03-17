@@ -840,8 +840,8 @@ steam.styles
 //======This controls the interior of List elements (though the fonts doesn't change on all of them.Better look at ListPanel)=====//
 		ListPanelInterior
 		{
-			textcolor="White"
-			bgcolor="none"
+			textcolor="red"
+			bgcolor="clientbg"
 		}
 
 ////////////////////////////////////////////////////////
@@ -856,7 +856,7 @@ steam.styles
 			{
 				//0="fill(x0,y1-1,x1,y1,White12)"
 			}
-			minimum-height=30
+			minimum-height=40
 		}
 		"CDialogSettings ListPanelSectionHeader"
 		{
@@ -892,7 +892,7 @@ steam.styles
 
 		MainNav
 		{
-			textcolor="White50"
+			textcolor="red"
 			selectedtextcolor="white"
 			font-family=basefont
 			font-style="uppercase"
@@ -1472,7 +1472,7 @@ steam.styles
 				4 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 			}
 		}
 		BackButton:active
@@ -1482,7 +1482,7 @@ steam.styles
 			render_bg {
 				
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 
 			}
 		}

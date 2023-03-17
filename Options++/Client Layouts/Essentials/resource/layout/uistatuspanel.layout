@@ -25,7 +25,7 @@
 		{
 			bgcolor=white05
 			render {
-				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/download"
+				1 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/download"
 		
 				
 			}

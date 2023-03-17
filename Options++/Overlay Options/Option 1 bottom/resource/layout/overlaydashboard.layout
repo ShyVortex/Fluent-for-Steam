@@ -83,7 +83,7 @@
 			render_bg
 			{
 				1="image( x0, y0+0, x0, y0+0, graphics/overlay/bottom/close)"
-				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 			}
 		}
 

@@ -8,10 +8,11 @@
 		Donate{	text="💲💸  Support on Paypal"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 								Divider {}	
 
-		FluentForSteam{	text="📄  Fluent For Steam v0.5 (patrons version) - Experimental."  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
+		FluentForSteam{	text="📄  Fluent For Steam v0.5.4"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 				Divider {}	
 		Webkit by AikoMidori {	text="👍  Webkit DarkMode by AikoMidori"  shellcmd="steam://openurl/https://github.com/AikoMidori" }
 		Sponsors{	text="💚  Metro for Steam Community."  }
+		Helpers{	text="💚  ShyVortex for extra help."	shellcmd="steam://openurl/https://github.com/ShyVortex"	}
 		
 	
 			Divider {}
@@ -234,10 +235,11 @@
 		Donate{	text="💲💸  Support on Paypal"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 								Divider {}	
 
-		FluentForSteam{	text="📄  Fluent For Steam v0.5 (patrons version) - Experimental."  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
+		FluentForSteam{	text="📄  Fluent For Steam v0.5.4"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 				Divider {}	
 		Webkit by AikoMidori {	text="👍  Webkit DarkMode by AikoMidori"  shellcmd="steam://openurl/https://github.com/AikoMidori" }
 		Sponsors{	text="💚  Metro for Steam Community."  }
+		Helpers{	text="💚  ShyVortex for extra help."	shellcmd="steam://openurl/https://github.com/ShyVortex"	}
 		
 	
 			Divider {}

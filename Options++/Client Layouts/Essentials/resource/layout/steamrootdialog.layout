@@ -92,52 +92,53 @@
 		
 		MenuBar
 		{
-				bgcolor = "none"
+				bgcolor = "ClientBG"
 			render
 			{
-				
-				
-
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				2 = "image(x0+50, y0-2, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
 			}
 		}
 		Menubar:hover {
-			bgcolor = "white05"
-			
+				bgcolor = "ClientBG"
+			render
+			{
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				2 = "image(x0+50, y0-2, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
+			}
 		}
 		"MenuBar MenuButton"
 		{
-						padding-right=36
-
-				bgcolor = "none"
-			render_bg{
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
-			}
-		
+				bgcolor = "ClientBG"
+			render_bg{}
+			minimum-height=48
+			padding-left="32"
+			render_bg {
 				
 				
 			}
 			
 			
-		
+		}
 		"MenuBar MenuButton:hover"
 		{
-						padding-right=36
+			bgcolor = "ClientBG"
+			render_bg {
+				
+				0 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
+				
 
-			bgcolor = "white05"
-			render_bg
-			{
-				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/more"
-
+				
 			}
 			
 
 		}
 		"MenuBar MenuButton:selected"
 		{
-			bgcolor = "white05"
-			render_bg
-			{
-				0 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/more"
+			bgcolor = "ClientBG"
+			render_bg {
+				
+				0 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 			}
 
 		}
@@ -202,14 +203,14 @@
 		
 		render_bg {
 	
-				2 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/friends"
+				2 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/friends"
 			}
 		}
 		
 		view_friends:active {
 			bgcolor = "white07"
 			render_bg {
-				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/friends"
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/friends"
 			}
         }
 		
@@ -299,14 +300,14 @@
 		announcement_button:hover {
 			bgcolor = "white05"
 			render_bg {
-				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/news"
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/news"
 			}
 		}
 
 		announcement_button:active {
 			bgcolor = "white07"
 			render_bg {
-				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/news"
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/news"
 			}
 		}
 
@@ -346,7 +347,7 @@
 			bgcolor = "white05"
 			render {}
 			render_bg {
-				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/compact/alert)"
+				0 = "image(x0+6, y0+12, x0, y0, graphics/assets/accent/icons/topbar/inbox)"
 			
 
 			
@@ -358,7 +359,7 @@
 			bgcolor = "white07"
 			render {}
 			render_bg {
-					0 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/alert"
+					0 = "image(x0+6, y0+12, x0, y0, graphics/assets/accent/icons/topbar/inbox)"
 				
 			}
 		}
@@ -381,8 +382,7 @@
 			bgcolor = "none"
 			render_bg {
 				0 = "image(x0,y0+1,x1,y1,graphics/fluent/icons/navbar/compact/alertunread)"
-				
-				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+				20 = "image(x0-8,y0+2,x1,y1,graphics/assets/accent/icons/topbar/noti)"
 
 			}
 		}
@@ -392,8 +392,8 @@
 			bgcolor= white03
 			textcolor = "none"
 			render_bg {
-				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/compact/alertunread)"
-				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+				0 = "image(x0+6, y0+12, x0, y0, graphics/assets/accent/icons/topbar/inbox_unread)"
+				20 = "image(x0-8,y0+2,x1,y1,graphics/assets/accent/icons/topbar/noti)"
 			}
 		}
 
@@ -401,7 +401,7 @@
 			bgcolor = "white07"
 			render_bg {
 				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/compact/alertunread)"
-				20 = "image(x0+5,y0+6,x1,y1,graphics/fluent/icons/navbar/compact/badge)"
+				20 = "image(x0-9,y0+2,x1,y1,graphics/assets/accent/icons/topbar/noti)"
 			}
 		}
 
@@ -501,7 +501,7 @@
 			textcolor=none
 			bgcolor="white05"
 			render_bg {
-				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/topbar/headsetvr)"
+				0 = "image(x0-7, y0, x0, y0, graphics/assets/accent/icons/topbar/headsetvr)"
 				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/hover"
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/hover"
 			}
@@ -511,7 +511,7 @@
 		{
 			bgcolor="white10"
 			render_bg {
-				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/xx1)"
+				0 = "image(x0-7, y0, x0, y0, graphics/assets/accent/icons/topbar/headsetvr)"
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/hover"
 			}
 			
@@ -538,8 +538,8 @@
 			bgcolor = "white05"
 			textcolor = "none"
 			render_bg {
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/bigpicture"
-				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/compact/bigpicture"
+				1 = "image(x0-7, y0, x0, y0, graphics/assets/accent/icons/topbar/bigpicture"
+				2 = "image(x0-7, y0, x0, y0, graphics/assets/accent/icons/topbar/bigpicture"
 			}
 		}
 		
@@ -549,7 +549,7 @@
 			bgcolor="none"
 			render_bg {
 				
-				2 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/compact/bigpicture"
+				2 = "image(x0-7, y0, x0, y0, graphics/assets/accent/icons/topbar/bigpicture"
 				
 
 
@@ -577,7 +577,7 @@
 			bgcolor=white05
 			render_bg {
 				
-				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/addgame"
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/addgame"
 
 			}
 		}
@@ -588,7 +588,7 @@
 			textcolor = "none"
 			render_bg {
 				
-				0 = "image(x0, y0, x0, y0, graphics/assets/accent/icons/compact/addgame"
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/addgame"
 				
 
 			}
@@ -639,11 +639,12 @@ layout
 		
 	
 	
-		place { control="AccountButton" end-right=MenuBar margin-right=6 align=right height=48 }
-		
+		place { control="AccountButton" end-right=add_game margin-right=6 align=right 
+		height=50 }
+		place { control="MenuBar" end-right="AccountButton" height=44 width=88 margin-right=4 margin-top=3	align="right" }
 		place { 
 			
-			control=" MenuBar,startvr,exitvr,ParentalLockButton,view_friends,AnnouncementButton, UIStatusPanel, InboxButton," 
+			control=" ,add_game,startvr,exitvr,ParentalLockButton,view_friends,AnnouncementButton, UIStatusPanel, InboxButton," 
 			spacing=8
 			
 			dir=right 
@@ -671,6 +672,6 @@ layout
 		place { control="frame_captiongrip" margin=4 width=max height=120 }
 	
 		//ocultos
-		place { control="universe_label,a,New,add_game,fullscreen" margin-left=-999 dir=down }
+		place { control="universe_label,a,New,,fullscreen" margin-left=-999 dir=down }
 	}
 }
