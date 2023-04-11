@@ -1,0 +1,120 @@
+"resource/layout/accountmenu.layout"
+{
+  styles
+  {
+    AccountMenuStyle
+    {
+      bgcolor=DraculaBG
+     	minimum-height=214
+      render
+      {
+         
+          1="image(x0+14, y0+42, x1, y1, accountbutton/verperfil)"
+          2="image(x0+14, y0+74, x1, y1, accountbutton/detallecuenta)"
+          3="image(x0+14, y0+110, x1, y1, accountbutton/preferenciacuenta)"
+          4="image(x0+14, y0+146, x1, y1, accountbutton/billetera)"
+          5="image(x0+14, y0+182, x1, y1, accountbutton/cerrarsesion)"
+          6="fill(x0+1,y0+33,x1-1,y0+34,white07)"
+          7="fill(x0+6,y0+139,x1-6,y0+140,white07)"
+          8="fill(x0+6,y0+176,x1-6,y0+177,white07)"
+      }
+    }
+
+    account_menu_button
+    {
+      bgcolor=bgcolor
+      inset="35 0 0 0"
+      textcolor=white
+     
+			font-family=FiraCode
+			font-size=18
+      font-weight=400
+      
+       render_bg
+      {
+          1="image(x0, y0, x1+10, y0+6, graphics/fluent/icons/navbar/label_buttons/selected)"
+      }
+    
+    }
+    account_menu_button:hover
+    {
+      bgcolor=DraculaPurple
+      textcolor=accent_menuitem_text
+     }
+    account_menu_button:active
+    {
+      bgcolor=none
+        render_bg
+      {
+          1="image(x0, y0+0, x1+10, y0+6, graphics/fluent/icons/navbar/label_buttons/selected)"
+      }
+     
+    
+    }
+    account_menu_label {
+					
+	  	font-size=18
+			font-family=FiraCode
+			textcolor=accent
+			textcolor="DraculaPurple"
+			 
+			
+				
+		}
+    account_menu_label:hover
+    {
+      font-family=FiraCode
+     	textcolor=DraculaGreen
+    }
+
+			
+		 wallet_amount_label {
+      render_bg {}
+        }
+    
+    
+  }
+
+  layout
+
+  {
+        place { control=account_name_label,wallet_amount_label spacing=4 align=left margin-left=14 margin-top=8  }
+
+    place {       control="view_profile_button, "           margin-top=38         height=32       width=max      }
+
+    place {       control="view_account_button"         start="view_profile_button" height=32 dir=down margin-top="2" width=max   }
+    
+     place { 
+      
+      control="view_preferences_button" 
+      start=view_account_button
+      height=32 
+      width=max 
+      dir=down
+      margin-top="2"
+      
+      }
+       place { 
+
+      control="view_wallet_button, " 
+     
+      start=view_preferences_button
+      height=32 
+      dir=down
+      margin-top=4
+      width=max 
+      
+      }
+    place { 
+      
+      control="change_user_button" 
+     
+      start=view_wallet_button
+      margin-top=4
+      height=32 
+      width=max 
+      dir=down
+   }
+    
+  }
+}

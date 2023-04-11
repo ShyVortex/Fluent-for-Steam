@@ -12,7 +12,7 @@
 				bgcolor = "ClientBG"
 			render
 			{
-				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
 				2 = "image(x0+46, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/more"
 			}
 		}
@@ -20,7 +20,7 @@
 				bgcolor = "ClientBG"
 			render
 			{
-				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
 				3 = "image(x0+46, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/more"
 			}
 		}
@@ -42,7 +42,7 @@
 			bgcolor = "ClientBG"
 			render_bg {
 				
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 				
 
 				
@@ -55,7 +55,7 @@
 			bgcolor = "ClientBG"
 			render_bg {
 				
-				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 			}
 
 		}
@@ -66,7 +66,7 @@
 			bgcolor = "ClientBG"
 			render_bg {
 				
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 				
 
 				

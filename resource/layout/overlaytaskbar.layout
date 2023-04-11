@@ -87,7 +87,8 @@
 			bgcolor=none
 			render_bg
 			{
-				1="image( x0, y0+0, x0, y0+0, overlay/topbar/border_left_settings)"					
+				1="image( x0, y0+0, x0, y0+0, overlay/topbar/border_left_settings)"				
+					
 			}	
 		
 		}

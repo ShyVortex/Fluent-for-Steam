@@ -52,7 +52,7 @@
 	colors
 	{
 
-		degrade = "13 13 13 160"
+		degrade = "13 13 13 150"
 
 
 	}
@@ -61,7 +61,7 @@
 	{
 		overlaymain
 		{
-					
+			bgcolor = degrade
 		}
 		
 		EditablePanel {
@@ -97,10 +97,10 @@
 		bottomfade
 		{
 			
-				bgcolor=degrade
-				render_bg	{
-						
-			}
+				bgcolor=none
+				render_bg {
+				0="image( x0, y0+0, x0, y0+0, overlay/topbar/topbar)"
+			}	
 					
 								
 		}
@@ -126,6 +126,7 @@
 		{
 			bgcolor="none"
 			textcolor="none"
+			
 			
 		
 		}
@@ -195,8 +196,8 @@
 			controls="TopFadePanel"
 			align="top-center"
 			margin-top=165
-			width=880
-			height=2
+			width=733
+			height=116
 
 
 		}
@@ -205,8 +206,11 @@
 		place { 
 
 			control="BottomFadePanel" 
-			width=max 
-			height=max 
+			width=733
+			height=116
+			margin-top=33
+			margin-left=21
+			align=top-center
 			
 			}
 		

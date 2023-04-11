@@ -86,7 +86,7 @@ body::-webkit-scrollbar{background-clip:padding-box!important;border:5px solid t
 /* Main Code */
 .home_morefeatured_ctn {background: var(--bedarkgrey)!important;border-radius:8px!important}
 
-a.gutter_item {color:#44CC66!important;} .gutter_item .icon {background-image: none!important;margin-left:0px!important;padding-left:0px!;display:none!important}
+a.gutter_item {color:white!important;} .gutter_item .icon {background-image: none!important;margin-left:0px!important;padding-left:0px!;display:none!important}
 
 .home_page_content_title {color:var(--titlepurple)!important}
 .gamelistbar_GameListHomeAndSearch_2TKEa {background-color:var(--darkgrey)!important}

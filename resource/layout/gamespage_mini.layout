@@ -2,26 +2,224 @@
 {
 	styles
 	{
+		CGamesPage_Mini{
+			minimum-width=494
+		}
+		place [!$OSX] { 
 
+			control="frame_minimize,frame_maximize,frame_close" 
+			margin-top=1
+			margin-right=1
+			align=right 
+			width=46
+			height=48
+          
+
+		}
+		FrameMinimizeButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			
+			render_bg {
+				1 = "image(x0, y0, x0, y0, caption/compact/minimizar"
+			}
+		}
+		FrameMinimizeButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white07
+			
+			
+		}
+		FrameMinimizeButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white05
+			
+		}
+		////////////////////////////BOTON MAXIMIZAR///////////////////////////////////////	
+		FrameMaximizeButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			render
+			{
+				0="image(x0+0,y0+0,x1,y1,caption/compact/maximizar)"
+			}
+		}
+		FrameMaximizeButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white07
+			
+		}
+		FrameMaximizeButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor="white05"
+			
+		}
+        /////////////////////////////////////boton restaurar////////////////////////////////////////
+         FrameRestoreButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			
+			render
+			{
+				0="image(x0+0,y0+7,x1,y1,caption/compact/restore)"
+			}
+		}
+		FrameRestoreButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white07
+			render
+			{
+				0="image(x0+0,y0+7,x1,y1,caption/compact/restore)"
+			}
+		}
+		FrameRestoreButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=white05
+			render
+			{
+				0="image(x0+0,y0+7,x1,y1,caption/compact/restore)"
+			}
+		}
+		///////////////////////////////////boton close/////////////////////////////////////////////////////////////
+        FrameCloseButton [$WIN32||$WINDOWS||$LINUX]
+		{
+			render
+			{
+				0="image(x0,y0,x1,y1,caption/compact/close)"
+			}
+		}
+		FrameCloseButton:hover [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=Red75
+			
+		}
+		FrameCloseButton:active [$WIN32||$WINDOWS||$LINUX]
+		{
+			bgcolor=RED45
+		
+		}
+		FrameCloseButton:disabled [$WIN32||$WINDOWS||$LINUX]
+		{
+			render_bg{}
+			image="caption/compact/cerrarnormal"
+		}
+		
+		MenuBar
+		{
+			bgcolor = "ClientBG"
+			render
+			{
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
+				2 = "image(x0+50, y0-2, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
+			}
+		}
+		Menubar:hover {
+				bgcolor = "ClientBG"
+			render
+			{
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
+				2 = "image(x0+50, y0-2, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
+			}
+		}
+		"MenuBar MenuButton"
+		{
+				bgcolor = "ClientBG"
+			render_bg{}
+			minimum-height=48
+			padding-left="32"
+			render_bg {
+				
+				
+			}
+			
+			
+		}
+		"MenuBar MenuButton:hover"
+		{
+			bgcolor = "ClientBG"
+			render_bg {
+				
+				0 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
+				
+
+				
+			}
+			
+
+		}
+		"MenuBar MenuButton:selected"
+		{
+			bgcolor = "ClientBG"
+			render_bg {
+				
+				0 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
+			}
+
+		}
+		  RootMenu {
+			bgcolor = "none"
+			render_bg {
+				
+				
+
+				
+			}
+			
+			
+		}
 		LibrarySearchIcon
 		{
 			bgcolor=none
-			image="graphics/search"
-			padding-left=12
+			image="none"
+		}
+		LibrarySearch {
+			inset="14 0 0 0"
+			
+			render_bg{}
+			render{
+				0="image(x0,y0,x1,y1, graphics/findbar)"
+			}
+
 		}
 		
-		NavLabel2:hover
-		{
-			textcolor="none"
-			image="grapichs/gamefilter"
-			
+		
+		LibrarySearch:hover {
+			inset="14 0 0 0"
+			padding-left=14
+			render_bg{}
+			render{
+				0="image(x0,y0,x1,y1, graphics/findbarselected)"
+			}
+
+		}
+		textentry:selected{
+			inset="14 0 0 0"
+			render{
+				0="image(x0,y0,x1,y1, graphics/findbarselected)"
+			}
+			render_bg{}
+		}
+		textentry{
+			inset="14 0 0 0"
+			render{}
+			render_bg{}
 		}
 		NavLabel2
 		{
 			textcolor="none"
-			image="grapichs/gamefilter_h"
+			render_bg{
+				1="image(x0,y0,x1,y1, graphics/filter)"
+			}
+			
 			
 		}
+		NavLabel2:hover
+		{
+			textcolor="none"
+			render_bg{
+				0 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
+				1="image(x0,y0,x1,y1, graphics/filter)"
+			}
+			
+		}
+		
 	
 		NavLabel2:selected
 		{
@@ -37,8 +235,145 @@
 		richText
 		{
 			selectedbgcolor="none"
-			textcolor="none"
+			textcolor="red"
 		}
+			ListPanel
+		{
+			textcolor=white45
+			minimum-height=40
+			font-family=basefont
+			font-weight=400
+			padding-left=8
+			
+			
+		}
+			ListPanel:hover
+		{
+			textcolor=white45
+			
+			font-family=basefont
+			font-weight=400
+			padding-left=8
+			render_bg
+			{
+		
+				0="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
+
+				///////////////////esquina izquierda inferior/////////////////////////////
+				1="image(x0-1,y1-4,x0+2,y1+4, materiales/button/ai)"
+
+				////////////////////parte inferior/////////////////////////////////////////
+				2="image_tiled(x0+4,y1-2,x1-4,y1+4, materiales/button/am)"
+				
+                ////////////medio de parte izquierda///////////////////////////////////////////////////
+				3="image_tiled(x0-3,y0+4,x0+2,y1-4, materiales/button/mi)"
+				
+				//////////////////////////esquina izquierda superior///////////////////////////////////////////
+				5="image(x0-1,y0-0,x0+2,y0+3, materiales/button/ti)"
+
+                ////////////////////////Parte del medio superior//////////////////////////////
+				6="image_tiled(x0+4,y0-2,x1-4,y0+2, materiales/button/tm)"
+
+                //////////////medio derecha/////////////////////////////////////////////////////////////////////
+				4="image_tiled(x1-2,y0+4,x1+3,y1-4, materiales/button/md)"
+
+				/////////////////////////esquina derecha superior///////////////////////////////////////////////
+				7="image(x1-4,y0-0,x1+3,y0+2, materiales/button/td)"
+
+				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
+				8="image(x1-4,y1-4,x1+3,y1+2,materiales/button/ad)"
+			
+			
+			}
+			
+			
+		}
+		ListPanelColumnheader{
+			alpha=0
+
+		}
+		ListPanelSectionHeader
+		{
+			padding-right=12
+			bgcolor=clientbg
+			padding-left=12
+			font-size=18
+		}
+		
+			ListPanelSectionHeader:hover
+		{
+			font-size=18
+				render_bg
+			{
+		
+				0="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
+
+				///////////////////esquina izquierda inferior/////////////////////////////
+				1="image(x0-1,y1-4,x0+2,y1+4, materiales/button/ai)"
+
+				////////////////////parte inferior/////////////////////////////////////////
+				2="image_tiled(x0+4,y1-2,x1-4,y1+4, materiales/button/am)"
+				
+                ////////////medio de parte izquierda///////////////////////////////////////////////////
+				3="image_tiled(x0-3,y0+4,x0+2,y1-4, materiales/button/mi)"
+				
+				//////////////////////////esquina izquierda superior///////////////////////////////////////////
+				5="image(x0-1,y0-0,x0+2,y0+3, materiales/button/ti)"
+
+                ////////////////////////Parte del medio superior//////////////////////////////
+				6="image_tiled(x0+4,y0-2,x1-4,y0+2, materiales/button/tm)"
+
+                //////////////medio derecha/////////////////////////////////////////////////////////////////////
+				4="image_tiled(x1-2,y0+4,x1+3,y1-4, materiales/button/md)"
+
+				/////////////////////////esquina derecha superior///////////////////////////////////////////////
+				7="image(x1-4,y0-0,x1+3,y0+2, materiales/button/td)"
+
+				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
+				8="image(x1-4,y1-4,x1+3,y1+2,materiales/button/ad)"
+			
+			
+			}
+		}
+		ListPanel {
+			font-size=17
+	
+		}
+		ListPanel:hover {
+			font-size=17
+				render_bg
+			{
+		
+				0="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
+
+				///////////////////esquina izquierda inferior/////////////////////////////
+				1="image(x0-1,y1-4,x0+2,y1+4, materiales/button/ai)"
+
+				////////////////////parte inferior/////////////////////////////////////////
+				2="image_tiled(x0+4,y1-2,x1-4,y1+4, materiales/button/am)"
+				
+                ////////////medio de parte izquierda///////////////////////////////////////////////////
+				3="image_tiled(x0-3,y0+4,x0+2,y1-4, materiales/button/mi)"
+				
+				//////////////////////////esquina izquierda superior///////////////////////////////////////////
+				5="image(x0-1,y0-0,x0+2,y0+3, materiales/button/ti)"
+
+                ////////////////////////Parte del medio superior//////////////////////////////
+				6="image_tiled(x0+4,y0-2,x1-4,y0+2, materiales/button/tm)"
+
+                //////////////medio derecha/////////////////////////////////////////////////////////////////////
+				4="image_tiled(x1-2,y0+4,x1+3,y1-4, materiales/button/md)"
+
+				/////////////////////////esquina derecha superior///////////////////////////////////////////////
+				7="image(x1-4,y0-0,x1+3,y0+2, materiales/button/td)"
+
+				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
+				8="image(x1-4,y1-4,x1+3,y1+2,materiales/button/ad)"
+			
+			
+			}
+		}
+		
 	}
 
  	layout
@@ -47,17 +382,16 @@
 
 	
 
-		region { name=SUPERIOR align=top y=40 height=40 x=0 margin-right=0 }
+		region { name=SUPERIOR align=top y=2 height=40 x=0 margin-right=0 }
 
-		place { control="library_filters" region=top start=library_search height=40 width=38 }
+		place { control="library_filters" start=menubar height=44 width=44 }
 
 		place { 
 			
 			control="MenuBar" 
-			margin-left=10
-			height=38 
-			margin-top=7
-			width=113 
+			margin-left=4
+			margin-top=5
+			height=44 width=88
 			 
 		}
 
@@ -66,20 +400,22 @@
 		place {  control="label_search_icon" 
 			
 			
-			region="SUPERIOR" 
-			width=24 
-			height=24 
+			align=bottom
+			width=1 
+			height=1 
 			
 			
 		}
 
 		place {  control="library_search" 
 			
-			region="SUPERIOR" 
+			align=top-center
+			start=menubar
 			start=Label_search_icon
-			height=24 
-			margin-right=44
-			width=max
+			margin-top=6
+			
+			height=32 
+			width=187
 			
 			}
 
@@ -101,10 +437,10 @@
 			
 			
 			align=left 
-			margin-right=1 
+			margin-right=4 
 			margin-top=79
 			margin-left=1 
-			margin-top=79 
+			margin-bottom=2 
 			width=max 
 			height=max 
 			
@@ -138,6 +474,17 @@
 			height=max 
 			
 		}
+			place [!$OSX] { 
+
+			control="frame_minimize,frame_maximize,frame_close" 
+			margin-top=1
+			margin-right=1
+			align=right 
+			width=46
+			height=48
+          
+
+			}
 	
  	}
 }

@@ -1472,7 +1472,7 @@ steam.styles
 				4 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				3 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 			}
 		}
 		BackButton:active
@@ -1482,7 +1482,7 @@ steam.styles
 			render_bg {
 				
 				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/backsidebar"
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 
 			}
 		}

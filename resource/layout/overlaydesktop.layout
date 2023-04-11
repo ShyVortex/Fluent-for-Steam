@@ -70,9 +70,9 @@
 		}
 		clocksuffix
 		{
-			font-size="22"
 			font-family=semibolddisplay
 			textcolor=white
+			font-size="22"
 		}
 
 		/////hora real
@@ -98,7 +98,7 @@
 		place { 
 			
 			region="botones"
-			control=",WorkshopButton,EditControllerConfig, ForceQuitButton, WebSiteButton, GameGroupsButton ,SessionText,TwoWeeksText,ForeverText " 
+			control="WorkshopButton,EditControllerConfig, ForceQuitButton, WebSiteButton, GameGroupsButton ,SessionText,TwoWeeksText,ForeverText " 
 			spacing=8
 			dir=down
 			align=right
@@ -178,7 +178,7 @@
 		// place { control=ScreenshotsDetailPanel height=1 widht=1 dir=down }
 		// place { control= align=left margin-top=30 margin-left=30 height=120 width=400 }
 
-	place { control=FriendsDetailPanel,CommunityDiscussionsDetailPanel,CommunityHubDetailPanel,GuidesDetailPanel,ScreenshotsDetailPanel margin-left=123 dir=left spacing=0 margin-top=42 height=82 width=120  align=top-center }
+		place { control=FriendsDetailPanel,CommunityDiscussionsDetailPanel,CommunityHubDetailPanel,GuidesDetailPanel,ScreenshotsDetailPanel margin-left=123 dir=left spacing=0 margin-top=42 height=82 width=120  align=top-center }
 		place { control=AchievementsDetailPanel margin-left=32 width=220 height=42 dir=left start="clock"}
 
 		place {

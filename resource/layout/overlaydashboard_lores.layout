@@ -46,7 +46,7 @@ resource/layout/overlaydashboard_lores.layout
 		HotkeyLabel { controlname="Label" labeltext="%hotkey%" style=hotkey }	
 		HotkeyExplain { controlname="Label" labeltext="#Overlay_Hotkey_Explain" margin-left=4 }	
 	}
-
+	
 	styles
 	{
 		overlaymain
@@ -59,9 +59,12 @@ resource/layout/overlaydashboard_lores.layout
 		
 		bottomfade
 		{
-			textcolor="none"
-			bgcolor="none"
-			render_bg{}
+			
+				bgcolor=none
+				render_bg {
+				0="image( x0, y0+0, x0, y0+0, overlay/topbar/topbar)"
+			}	
+					
 		}
 		topbar
 		{
@@ -115,6 +118,16 @@ resource/layout/overlaydashboard_lores.layout
 		place { control=CloseButton x=20 y=27 width=210 height=60 }
 		
 		//ocultos
-		place { control="HotkeyExplain,TopFadePanel,BottomFadePanel" align=right margin-right=-999 }
+		place { 
+
+			control="BottomFadePanel" 
+			width=733
+			height=116
+			margin-top=33
+			margin-left=21
+			align=top-center
+			
+			}
+		place { control="HotkeyExplain,TopFadePanel" align=right margin-right=-999 }
 	}
 }

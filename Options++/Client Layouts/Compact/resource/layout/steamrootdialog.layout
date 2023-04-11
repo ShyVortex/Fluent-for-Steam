@@ -12,16 +12,16 @@
 				bgcolor = "ClientBG"
 			render
 			{
-				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/Heart"
-				2 = "image(x0+46, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/more"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
+				2 = "image(x0+43, y0-2, x0, y0+0, graphics/fluent/icons/navbar/topbar/more"
 			}
 		}
 		Menubar:hover {
 				bgcolor = "ClientBG"
 			render
 			{
-				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/Heart"
-				3 = "image(x0+46, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/more"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
+				3 = "image(x0+43, y0-2, x0, y0+0, graphics/fluent/icons/navbar/topbar/more"
 			}
 		}
 		"MenuBar MenuButton"
@@ -42,7 +42,7 @@
 			bgcolor = "ClientBG"
 			render_bg {
 				
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 				
 
 				
@@ -55,7 +55,7 @@
 			bgcolor = "ClientBG"
 			render_bg {
 				
-				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 			}
 
 		}
@@ -66,7 +66,7 @@
 			bgcolor = "ClientBG"
 			render_bg {
 				
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/sidebar/menu_hover"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/menu_hover"
 				
 
 				
@@ -105,8 +105,8 @@
 			textcolor = "none"
 				bgcolor = "ClientBG"
 			render_bg {
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/friends"
-				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/friends"
+				1 = "image(x0-7, y0-4, x0, y0+0, graphics/fluent/icons/navbar/sidebar/friends"
+				2 = "image(x0-7, y0-4, x0, y0+0, graphics/fluent/icons/navbar/sidebar/friends"
 			}
 		}
 
@@ -140,51 +140,45 @@
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// = = = = = = This is the VAC Ban Button wich appears only if you are VAC Banned(made it an icon rather than text) = = = = //
 
-		support_alert {
-			textcolor = "white75"
-				bgcolor = "ClientBG"
-			padding-right = "3"
-			padding-left = "15"
+		Support_alert
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
 			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				0 = "image(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/warning"
+
+			}
+		}
+		Support_alert:hover
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
+			render_bg {
+				0 = "image(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/warning_h"
+
 			}
 		}
 
-		support_alert:hover {
+		support_alert_ack
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
 			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white05)"
+				0 = "image(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/warning"
+
 			}
 		}
-
-		support_alert:active {
+		support_alert_ack:hover
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
 			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white10)"
-			}
-		}
+				0 = "image(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/warning_h"
 
-		support_alert_ack {
-			textcolor = "white75"
-			bgcolor = "none"
-			padding-right = "3"
-			padding-left = "15"
-			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-			}
-		}
-
-		support_alert_ack:hover {
-			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white05)"
-			}
-		}
-
-		support_alert_ack:active {
-			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white10)"
 			}
 		}
 
@@ -262,7 +256,7 @@
 			bgcolor = "none"
 			render {}
 			render_bg {
-				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/topbar/inbox)"
+				0 = "image(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/inbox)"
 				1 = "image(x0,y0,x1,y1,graphics/hover42)"
 				2 = "image(x0,y0,x1,y1,graphics/hover42)"
 
@@ -277,7 +271,7 @@
 			bgcolor = "none"
 			render {}
 			render_bg {
-					0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/topbar/inbox)"
+					0 = "(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/inbox)"
 					1 = "image(x0,y0,x1,y1,graphics/hover42)"
 			}
 		}
@@ -304,7 +298,7 @@
 			render_bg {
 				0 = "image(x1-36,y0,x1,y1,graphics/fluent/icons/navbar/topbar/inboxunread)"
 				1 = "image(x1-36,y0,x1,y1,graphics/fluent/icons/navbar/topbar/inboxunread)"
-				20 = "image(x1-32,y0+1,x1,y1,graphics/fluent/icons/navbar/topbar/badge)"
+				20 = "image(x1-45,y0+1,x1,y1,graphics/assets/accent/icons/topbar/noti)"
 
 			}
 		}
@@ -314,8 +308,8 @@
 			padding-right=30
 			textcolor = "white75"
 			render_bg {
-				0 = "image(x1-36,y0,x1,y1,graphics/fluent/icons/navbar/topbar/inboxunread)"
-				20 = "image(x1-36,y0,x1,y1,graphics/fluent/icons/navbar/topbar/inboxunread)"
+				0 = "image(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/inbox_unread)"
+			
 				10="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
 
 				///////////////////esquina izquierda inferior/////////////////////////////
@@ -341,6 +335,7 @@
 
 				/////////////////////esquina inferior derecha//////////////////////////////////////////////////////
 				8="image(x1-4,y1-4,x1+3,y1+2,materiales/button/ad)"
+				20 = "image(x1-45,y0+1,x1,y1,graphics/assets/accent/icons/topbar/noti)"
 
 			}
 		}
@@ -349,7 +344,7 @@
 			bgcolor = "none"
 			padding-right=30
 			render_bg {
-				0 = "image(x1-36,y0,x1,y1,graphics/fluent/icons/navbar/topbar/inboxunread)"
+				0 = "image(x1-32, y0+10, x1, y0, graphics/assets/accent/icons/topbar/inbox_unread)"
 				10="fill(x0+2,y0+2,x1-2,y1-2,FFFFFFxx8)"
 
 				///////////////////esquina izquierda inferior/////////////////////////////
@@ -541,8 +536,8 @@
 			textcolor = "none"
 			bgcolor=clientbg
 			render_bg {
-				1 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/addgame"
-				2 = "image(x0, y0+0, x0, y0+0, graphics/fluent/icons/navbar/topbar/addgame"
+				1 = "image(x0-6, y0-4, x0, y0+0, graphics/fluent/icons/navbar/sidebar/addgame"
+				2 = "image(x0-6, y0-4, x0, y0+0, graphics/fluent/icons/navbar/sidebar/addgame"
 			}
 		}
 
@@ -593,7 +588,6 @@ layout
 
 
 		//Controls
-		place { control="XPVistaAlert,SupportAlert," region=top align=right end-right=frame_minimize  spacing=0 margin-right=3 height=39 }
 		place { control="" region=top align=right end-right=frame_minimize margin-right=1 height=40 }
 		place [$OSX] { control="UIStatusPanel" region=top align=right margin-right=1 width=27 height=40 }
 		place { region=lefty control="" margin-left=18 margin-top=12 height=23 width=120 }
@@ -618,7 +612,7 @@ layout
 		place { control="" margin-right=12 align=right  margin-top=33  height=50  }
 		place { 
 			
-			control=" ParentalLockButton,AnnouncementButton,fullscreen,add_game, startvr, exitvr,UIStatusPanel ,view_friends, ,universe_label," 
+			control=" ParentalLockButton,AnnouncementButton,EOLAlert, SupportAlert,fullscreen,add_game, startvr, exitvr,UIStatusPanel ,view_friends, ,universe_label," 
 			spacing=0
 			margin-right=4
 			dir=right 
@@ -641,7 +635,7 @@ layout
 			}
 
 			
-		place { control="MenuBar" height=44 width=88 margin-left=53 align=left margin-top=37	dir=right }
+		place { control="MenuBar" height=44 width=88 margin-left=53 align=left margin-top=38	dir=right }
 
 	
 		place { control="AccountButton" spacing=0

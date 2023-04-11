@@ -15,12 +15,12 @@
     --bedarkgrey: #151515;
     --thegrey: #181818;
     --begrey: #262627;
-    --littlegrey: #282828;
+    --littlegrey: #212121;
     --darkgrey: #131313;
-    --grey: #2E303D;
-    --lightgrey: #2E303D;
+    --grey: #202020;
+    --lightgrey: #212121;
     --lightergrey: #282931;
-    --grey-ish: #454545;
+    --grey-ish: #202020;
     --dakerwhite: #b8b6b4;
     --darkwhite: #d9dadd;
     --white: #ffffff;
@@ -42,7 +42,7 @@
     --red: #FF0000;
     --orange: #FF6600;
     --yellow: #FFFF00;
-    --titlepurple: #BD93F9;
+    --titlepurple: #ffffff;
     /* Profile Blur */
     --blur: blur(10px); /* default 10px */
 
@@ -86,7 +86,7 @@ body::-webkit-scrollbar{background-clip:padding-box!important;border:5px solid t
 /* Main Code */
 .home_morefeatured_ctn {background: var(--bedarkgrey)!important;border-radius:8px!important}
 
-a.gutter_item {color:#44CC66!important;} .gutter_item .icon {background-image: none!important;margin-left:0px!important;padding-left:0px!;display:none!important}
+a.gutter_item {color:white!important;} .gutter_item .icon {background-image: none!important;margin-left:0px!important;padding-left:0px!;display:none!important}
 
 .home_page_content_title {color:var(--titlepurple)!important}
 .gamelistbar_GameListHomeAndSearch_2TKEa {background-color:var(--darkgrey)!important}

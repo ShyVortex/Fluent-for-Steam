@@ -70,6 +70,7 @@
 		black35="0 0 0 106"
 		black45="0 0 0 114.75"
 		black75="0 0 0 191.25"
+		black85="0 0 0 221.25"
 		black95="0 0 0 231.25"
 		black="0 0 0 255"
 
@@ -89,7 +90,22 @@
 		Red="255 0 0 255"
 		Red45="255 0 0 114.75"
 		Red75="255 0 0 191.25"
+		greytrophy="88 88 88 38"
 
+		//===Manually Added===//
+		yellow="255 255 0 255"
+		yellowgreen="154 205 50 255"
+		gold="255 215 0 255"
+		goldenrod="218 165 32 255"
+		acquamarine="127 255 212 255"
+		acquamarine45="102 205 170 255"
+		turquoise="64 224 208 255"
+		seagreen="46 139 87 255"
+		seagreen45="60 179 113 255"
+		cyan="0 255 255 255"
+		darkcyan="0 139 139 255"
+		olive="128 128 0 255"
+		//====================//
 		
 		accent175="19 94 242 175"
 		logrosbackground105="88 88 88 105"

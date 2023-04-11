@@ -92,10 +92,10 @@
 		
 		MenuBar
 		{
-				bgcolor = "ClientBG"
+			bgcolor = "ClientBG"
 			render
 			{
-				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
 				2 = "image(x0+50, y0-2, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
 			}
 		}
@@ -103,7 +103,7 @@
 				bgcolor = "ClientBG"
 			render
 			{
-				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/heart"
+				1 = "image(x0, y0+0, x0, y0+0, graphics/assets/accent/icons/topbar/early"
 				2 = "image(x0+50, y0-2, x0, y0+0, graphics/fluent/icons/navbar/compact/more"
 			}
 		}
@@ -225,53 +225,48 @@
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// = = = = = = This is the VAC Ban Button wich appears only if you are VAC Banned(made it an icon rather than text) = = = = //
 
-		support_alert {
-			textcolor = "white75"
-				bgcolor = "ClientBG"
-			padding-right = "3"
-			padding-left = "15"
+		Support_alert
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
 			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/warning"
+
+			}
+		}
+		Support_alert:hover
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
+			render_bg {
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/warning_h"
+
 			}
 		}
 
-		support_alert:hover {
+		support_alert_ack
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
 			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white05)"
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/warning"
+
+			}
+		}
+		support_alert_ack:hover
+		{
+			font-family=basefont
+			textcolor=none
+			render {}
+			render_bg {
+				0 = "image(x0-7, y0-1, x0, y0, graphics/assets/accent/icons/topbar/warning_h"
+
 			}
 		}
 
-		support_alert:active {
-			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white10)"
-			}
-		}
-
-		support_alert_ack {
-			textcolor = "white75"
-			bgcolor = "none"
-			padding-right = "3"
-			padding-left = "15"
-			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-			}
-		}
-
-		support_alert_ack:hover {
-			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white05)"
-			}
-		}
-
-		support_alert_ack:active {
-			render_bg {
-				0 = "image(x0+6,y0+8,x1,y1,graphics/warning)"
-				1 = "fill(x0,y0,x1,y1,white10)"
-			}
-		}
 
 		inboxmenuitem {
 			textcolor = "white"
@@ -373,6 +368,55 @@
 			}
 		}
 
+	//--------------------            BOTON MENSAJES      --------------------
+
+		inbox_button {
+			textcolor = "none"	
+			bgcolor = "none"
+			font-family = "basefont"
+			font-style = "none"
+			render {}
+			render_bg {
+
+				0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/alert)"
+				
+			}
+		}
+
+		inbox_button:hover {
+
+
+	
+			textcolor = "white"
+			bgcolor = "white05"
+			render {}
+			render_bg {
+				0 = "image(x0+6, y0+12, x0, y0, graphics/assets/accent/icons/topbar/inbox)"
+			
+
+			
+
+			}
+		}
+
+		inbox_button:selected {
+			bgcolor = "white07"
+			render {}
+			render_bg {
+					0 = "image(x0+6, y0+12, x0, y0, graphics/assets/accent/icons/topbar/inbox)"
+				
+			}
+		}
+
+		inbox_button:disabled {
+				bgcolor = "ClientBG"
+			textcolor = "white"
+			bgcolor = "none"
+			render_bg {
+					0 = "image(x0,y0,x1,y1,graphics/fluent/icons/navbar/compact/inbox)"
+			}
+		}
+
 	// --------------------            BOTON MENSAJES      --------------------
 		
 		inbox_button_active {
@@ -400,7 +444,7 @@
 		inbox_button_active:selected {
 			bgcolor = "white07"
 			render_bg {
-				0 = "image(x0,y0,x1,y1,graphics/assets/accent/icons/compact/alertunread)"
+				0 = "image(x0+6, y0+12, x0, y0, graphics/assets/accent/icons/topbar/inbox_unread)"
 				20 = "image(x0-9,y0+2,x1,y1,graphics/assets/accent/icons/topbar/noti)"
 			}
 		}
@@ -639,12 +683,12 @@ layout
 		
 	
 	
-		place { control="AccountButton" end-right=add_game margin-right=6 align=right 
+		place { control="AccountButton" end-right=startvr margin-right=6 align=right 
 		height=50 }
 		place { control="MenuBar" end-right="AccountButton" height=44 width=88 margin-right=4 margin-top=3	align="right" }
 		place { 
 			
-			control=" ,add_game,startvr,exitvr,ParentalLockButton,view_friends,AnnouncementButton, UIStatusPanel, InboxButton," 
+			control=" ,startvr,exitvr,ParentalLockButton,EOLAlert, SupportAlert,AnnouncementButton,add_game,view_friends, UIStatusPanel, InboxButton," 
 			spacing=8
 			
 			dir=right 

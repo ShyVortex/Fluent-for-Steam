@@ -33,7 +33,13 @@
 		ForeverText { controlname=label style=TimeStrings }
 		TimedTrialText { controlname=label style=TimeStrings }
 	}
-	
+	colors
+	{
+
+		degrade = "13 13 13 150"
+
+	}
+
 	styles
 	{
 		sidemenu

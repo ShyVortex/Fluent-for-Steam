@@ -8,12 +8,12 @@
 		Donate{	text="💲💸  Support on Paypal"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 								Divider {}	
 
-		FluentForSteam{	text="📄  Fluent For Steam v0.5.4"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
+		FluentForSteam{	text="📄  Fluent For Steam v0.5.4.1"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 				Divider {}	
 		Webkit by AikoMidori {	text="👍  Webkit DarkMode by AikoMidori"  shellcmd="steam://openurl/https://github.com/AikoMidori" }
 		Sponsors{	text="💚  Metro for Steam Community."  }
 		Helpers{	text="💚  ShyVortex for extra help."	shellcmd="steam://openurl/https://github.com/ShyVortex"	}
-		
+
 	
 			Divider {}
 		Sponsors{	text="💚  Thanks to all patrons for supporting this project."  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
@@ -31,7 +31,9 @@
 	rootmenu [$WINDOWS||$LINUX]
 	{
 		
-		Large_Mode { text="#steam_menu_largemode"  shellcmd="steam://open/largegameslist" }
+		Mini_Mode {	text="#steam_menu_minimode"  shellcmd="steam://open/minigameslist" }
+Large_Mode { text="#steam_menu_largemode"  shellcmd="steam://open/largegameslist" }
+
 		
 		
 		BackupGames { text="#steam_menu_backupgames"  command="backupgames" }
@@ -184,7 +186,9 @@
 	{
 		
 	
-		Large_Mode { text="#steam_menu_largemode"  shellcmd="steam://open/largegameslist" }
+		Mini_Mode {	text="#steam_menu_minimode"  shellcmd="steam://open/minigameslist" }
+Large_Mode { text="#steam_menu_largemode"  shellcmd="steam://open/largegameslist" }
+
 		
 		
 		BackupGames { text="#steam_menu_backupgames"  command="backupgames" }
@@ -235,7 +239,7 @@
 		Donate{	text="💲💸  Support on Paypal"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 								Divider {}	
 
-		FluentForSteam{	text="📄  Fluent For Steam v0.5.4"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
+		FluentForSteam{	text="📄  Fluent For Steam v0.5.4.1"  shellcmd="steam://openurl/https://www.patreon.com/FluentForSteam" }
 				Divider {}	
 		Webkit by AikoMidori {	text="👍  Webkit DarkMode by AikoMidori"  shellcmd="steam://openurl/https://github.com/AikoMidori" }
 		Sponsors{	text="💚  Metro for Steam Community."  }
