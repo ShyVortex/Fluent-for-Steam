@@ -1,0 +1,5 @@
+{
+	"active-skin": "fluent-b_v1",
+	"show-console": true,
+	"force-arguments": "-dev -cef-enable-debugging"
+}

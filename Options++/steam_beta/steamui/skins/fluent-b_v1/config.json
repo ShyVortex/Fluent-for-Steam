@@ -1,0 +1,17 @@
+{
+	"patch": [
+		{ "url": "store.steampowered.com", "css": "webkit.css", "patch-every-instance": false },
+		{ "url": "steamcommunity.com", "css": "webkit.css", "patch-every-instance": false },
+		{ "url": "Steam", "css": "libraryroot.custom.css", "js": "libraryroot.custom.js", "patch-every-instance": false },
+		{ "url": "Friends List", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Profile Supernav", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Community Supernav", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Library Supernav", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Store Supernav", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Account Menu", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Steam Root Menu", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Menu", "css": "libraryroot.custom.css", "patch-every-instance": false },
+		{ "url": "Steam Settings", "css": "libraryroot.custom.css", "js": "settings.custom.js", "patch-every-instance": true },
+		{ "url": "Steam Big Picture Mode", "css": "bigpicture.custom.css", "patch-every-instance": false }
+	]
+}
